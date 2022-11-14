@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    background-color: gray;
+}
+
+.all-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 30%;
+    background-color: aquamarine;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.numero{
+    font-size: 50px;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.botones{
+    margin: 5px;
+    padding: 10px;
+    background-color: blueviolet;
+    color: aliceblue;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 7px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contador del eze</title>
+</head>
+<body>
+    <div class="all-container">
+
+        
+        <div class="container">
+            <div>
+                <p class="numero" id="numero" >
+                    0
+                </p>
+            </div>
+            
+            <div class="button-container">
+                <button class="botones"  id="boton">Contar</button>
+                <button class="botones" id="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+        
+    <script>
+
+        var segundo = 0;
+        let numero = document.getElementById('numero');
+        let boton = document.getElementById('boton');
+        const reset = document.getElementById('reset');
+
+        
+        boton.addEventListener("click", () =>{
+            segundo++;
+            numero.innerHTML = segundo;
+        });
+
+
+        function resetear(){
+            segundo = 0;
+            numero.innerHTML = segundo;
+        }
+
+        reset.addEventListener('click', resetear);
+
+
+/*         setTimeout(() =>{
+            escribir();
+        }, 2000); */
+    </script>
+</body>
+</html>
